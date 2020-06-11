@@ -27,15 +27,18 @@ function checkForWin(board){
       if(board[a]+board[b]+board[c]===3){
         let winner = 'X';
         alert('X wins!!!');
+        resetGame();
       }
       else if(board[c]+board[b]+board[a]===-3){
         alert('O wins!!!');
         let winner = 'O';
+        resetGame();
       }
     }
     if(turnCounter===9){
         alert('KATZ GAME! Nobody wins, everybody feels like a loser. That\'s life!');
         let winner = 'Nobody'
+        resetGame();
     }
     return winner;
 }
