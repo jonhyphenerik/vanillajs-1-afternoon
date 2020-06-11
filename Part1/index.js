@@ -71,5 +71,4 @@ function resetGame(){
     whoseTurn.innerText = 'X';
 }
 
-
 window.addEventListener('mouseclick', play);
